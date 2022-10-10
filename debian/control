@@ -1,0 +1,23 @@
+Source: libcpan-meta-yaml-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl,
+                     libyaml-perl,
+                     perl (>= 5.15.0) | libjson-pp-perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libcpan-meta-yaml-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libcpan-meta-yaml-perl.git
+Homepage: https://metacpan.org/release/CPAN-Meta-YAML
+
+Package: libcpan-meta-yaml-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: reimplementation of a subset of YAML for CPAN Meta files
+ CPAN::Meta::YAML implements a subset of the YAML specification for use in
+ reading and writing CPAN metadata files like META.yml and MYMETA.yml. It
+ should not be used for any other general YAML parsing or generation task.
